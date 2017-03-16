@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kjsce.slidingexample.Nu_Slider"
+    android:background="#ffffff"
+    android:orientation="horizontal">
+
+
+    <!-- -->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/FormerImage"
+        android:layout_gravity="center"/>
+
+    <!-- -->
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,162 @@
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/contact_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/White"
+
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/contact_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:elevation="4dp"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+
+        <WebView
+            android:id="@+id/contact_webView"
+            android:layout_width="match_parent"
+            android:layout_marginTop="58dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            />
+
+        <!--
+                <LinearLayout android:id="@+id/header"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dip"
+                    android:paddingBottom="5dip"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView android:src="@mipmap/nww"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:layout_gravity="start"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:text="Enquire"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/links"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:id="@+id/form"
+                    android:layout_below="@+id/header"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+                    <EditText
+                        android:id="@+id/contact_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/prompt_name"
+                        android:background="@drawable/text_border"
+                        android:padding="15dp"
+                        android:layout_marginTop="10dp"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/links"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+
+                    <EditText
+                        android:id="@+id/contact_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/prompt_email"
+                        android:background="@drawable/text_border"
+                        android:padding="15dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/links"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+
+                    <EditText
+                        android:id="@+id/contact_tel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Telephone No."
+                        android:background="@drawable/text_border"
+                        android:padding="15dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/links"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+                    <EditText
+                        android:id="@+id/contact_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Mobile"
+                        android:background="@drawable/text_border"
+                        android:padding="15dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/links"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+                    <EditText
+                        android:id="@+id/message"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:textColor="@color/links"
+                        android:hint="@string/prompt_message"
+                        android:background="@drawable/text_border"
+                        android:padding="15dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="start"
+                        android:inputType="number"
+                        android:maxLines="10"
+                        />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:id="@+id/contact_request"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/TextViewBackgrounds"
+                        android:text="Send Message"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:onClick="contact_Request"
+                        android:textStyle="bold"
+                        android:textColor="@color/White" />
+
+                    </LinearLayout>
+                <LinearLayout android:id="@+id/footer"
+                    android:layout_width="fill_parent"
+                    android:layout_height="90dip"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/form">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="\u00A9 2010 Test Copyright 2016. All Rights Reserved "/>
+                </LinearLayout> -->
+        </RelativeLayout>

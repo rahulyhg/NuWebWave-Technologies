@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array
+        name="services">
+        <item>Website Development</item>
+        <item>Graphic Designing</item>
+        <item>Search Engine Optimization</item>
+        <item>Social Media Optimization</item>
+    </string-array>
+</resources>

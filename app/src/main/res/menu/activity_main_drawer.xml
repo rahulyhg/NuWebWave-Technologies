@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@mipmap/ic_home_black_24dp"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_services"
+            android:icon="@mipmap/ic_subject_black_24dp"
+            android:title="Services"/>
+        <item
+            android:id="@+id/nav_domain"
+            android:icon="@mipmap/ic_dns_black_24dp"
+            android:title="Domain" />
+        <item
+            android:id="@+id/nav_pnp"
+            android:icon="@mipmap/ic_picture_in_picture_black_24dp"
+            android:title="Plan and Pricing" />
+        <item
+            android:id="@+id/nav_portfolio"
+            android:icon="@mipmap/ic_work_black_24dp"
+            android:title="Portfolio" />
+
+        <item
+            android:id="@+id/nav_career"
+            android:icon="@mipmap/ic_class_black_24dp"
+            android:title="Career">
+         <!--   <menu>
+                <item
+                    android:id="@+id/career_sales_marketing"
+                    android:checked="false"
+                    android:title="Sales \u0026 Marketing" />
+                <item
+                    android:id="@+id/career_graphics"
+                    android:checked="false"
+                    android:title="Graphics" />
+                <item
+                    android:id="@+id/career_seo"
+                    android:checked="false"
+                    android:title="SEO" />
+                <item
+                    android:id="@+id/career_magneto_wordpress_php"
+                    android:checked="false"
+                    android:title="Magneto,Wordpress \u0026 PHP" />
+                <item
+                    android:id="@+id/career_internship"
+                    android:checked="false"
+                    android:title="Internship" />
+            </menu>
+            -->
+        </item>
+        <item
+            android:id="@+id/nav_reseller"
+            android:icon="@mipmap/ic_autorenew_black_24dp"
+            android:title="Reseller"/>
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_contact_us"
+                android:icon="@mipmap/ic_settings_phone_black_24dp"
+                android:title="Contact Us" />
+
+        </menu>
+    </item>
+
+</menu>

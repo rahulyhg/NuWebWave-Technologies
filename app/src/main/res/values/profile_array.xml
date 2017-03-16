@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="profile_array">
+        <item>--Select your Profile--</item>
+        <item>Digital Marketing Head</item>
+        <item>PPC Manager</item>
+        <item>Accounts and Admin</item>
+        <item>SEO Content Writer</item>
+        <item>Social Media Optimizer(SMO)</item>
+        <item>Search Engine Optimizer</item>
+        <item>Sr. SEO Executive</item>
+        <item>Client Servicing Executives</item>
+        <item>Business Development Executives</item>
+        <item>Web Designer</item>
+    </string-array>
+</resources>

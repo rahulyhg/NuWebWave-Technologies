@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kjsce.slidingexample">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="NuWebWave"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".NavigationDrawer"
+            android:label="NavigationDrawer"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".HomePage"
+            android:label="Home"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity android:name=".CareerActivity"
+            android:label="Careers"
+            android:parentActivityName=".HomePage"/>
+
+        <activity android:name=".career_details"
+            android:theme="@style/AppTheme"
+            android:label="Careers"
+            android:parentActivityName=".CareerActivity"
+            />
+
+        <activity
+            android:name=".Career_Form"
+            android:label="Career"
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".CareerActivity"
+            />
+
+        <activity
+            android:name=".ResellerActivity"
+            android:label="Reseller"
+            android:theme="@style/AppTheme"
+            android:parentActivityName=".HomePage"/>
+
+        <activity
+            android:name=".Reseller_Form"
+            android:label="Reseller"
+            android:parentActivityName=".ResellerActivity"
+            android:theme="@style/AppTheme" />
+
+        <activity android:name=".Contact_Us"
+            android:label="Contact Us"
+            android:parentActivityName=".HomePage"/>
+
+        <activity
+            android:name=".Contact_Form"
+            android:label="Contact Us"
+            android:parentActivityName=".Contact_Us"
+            android:theme="@style/AppTheme" />
+
+
+
+        <activity android:name=".Services"
+            android:label="Services"
+            android:parentActivityName=".HomePage"/>
+
+        <activity
+            android:name=".service_details"
+            android:label="Services"
+            android:parentActivityName=".Services"
+            android:theme="@style/AppTheme" />
+
+        <activity android:name=".Plan_n_Pricing"
+            android:label="Plan and Pricing"
+            android:parentActivityName=".HomePage"/>
+
+        <activity android:name=".Domain_n_Hosting"
+            android:label="Domain and Hosting"
+            android:parentActivityName=".HomePage"/>
+
+        <activity android:name=".Portfolio"
+            android:label="Portfolio"
+            android:parentActivityName=".HomePage"/>
+
+
+
+
+
+
+    </application>
+
+</manifest>

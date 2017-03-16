@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="58dp">
+        <!--  Header Starts-->
+        <LinearLayout android:id="@+id/header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="Get in Touch"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/links"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+        <!--  Header Ends -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:id="@+id/Info_inner_Cover"
+            android:layout_below="@+id/header"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="12dp"
+                    android:textSize="12sp"
+                    android:text=""/>
+                    <!-- android:text=" SVP Road, Bangad Wadi,\nDadarkar Bldg, 3rd Floor,\nMumbai-400 004" -->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="12dp"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:text="\u2022 PHONE :"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="12dp"
+                    android:textSize="12sp"
+                    android:text=" +91-22 -66313444"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="12dp"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:text="\u2022 MOBILE :"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="12dp"
+                    android:textSize="12sp"
+                    android:text=" +91-9004792888"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="12dp"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:text="\u2022 EMAIL:"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="12dp"
+                    android:textSize="12sp"
+                    android:text=" nuwebwave@gmail.com"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="12dp"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:text="\u2022 EMAIL:"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="12dp"
+                    android:textSize="12sp"
+                    android:text=" info@nuwebwave.com"/>
+            </LinearLayout>
+
+
+            <!-- Lower Header Starts-->
+
+
+            <LinearLayout android:id="@+id/lower_header"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dip"
+                android:paddingBottom="5dip"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:text="Office Hours"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/links"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+            <!-- Lower Header Ends -->
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="12dp"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@mipmap/ic_query_builder_black_18dp"
+                    android:text=" Monday - Friday 10am to 6pm"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="12dp"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@mipmap/ic_query_builder_black_18dp"
+                    android:text=" Saturday - 9am to 2pm"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="12dp"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@mipmap/ic_query_builder_black_18dp"
+                    android:text=" Sunday - Closed"/>
+
+            </LinearLayout>
+        </LinearLayout>
+</RelativeLayout>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/contact_us_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabSize="normal"
+            app:rippleColor="@color/TextViewBackgrounds"
+            android:src="@mipmap/ic_settings_phone_white_24dp"
+            app:backgroundTint="@android:color/holo_red_dark"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            />
+ </android.support.design.widget.CoordinatorLayout>

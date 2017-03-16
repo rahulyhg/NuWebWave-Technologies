@@ -1,0 +1,145 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<!-- Mirrored from nuwebwave.com/w/html-contact-form.php -->
+<head>
+<title>Contact Us</title>
+<!-- define some style elements-->
+<style>
+label, a, body {
+	font-family : Arial, Helvetica, sans-serif;
+	font-size : 12px;
+}
+.err {
+	font-family : Verdana, Helvetica, sans-serif;
+	font-size : 12px;
+	color: red;
+}
+.boxshadow {
+	box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15);
+	width:150px;
+}
+.setmng{ 
+    background: none repeat scroll 0 0 #E31E24 !important;
+    border-radius: 21px;
+    color: #fff;
+    font-size: 12px;
+    height: 32px;
+    padding: 0 20px;
+    transition: background-color 0.4s ease 0s;}
+	 table {
+    -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+	 border-radius: 25px;
+    border: 2px solid #8AC007;}
+</style>
+<!-- a helper script for vaidating the form-->
+<script language="JavaScript" src="scripts/gen_validatorv31.js" type="text/javascript"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-88757450-1', 'auto');
+  ga('send', 'pageview');
+
+</script></head>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<body>
+<div id='contact_form_errorloc' class='err'></div>
+<script type="text/javascript">
+function validateForm(){
+	 var a = document.forms["form"]["name"].value;
+	  var b = document.forms["form"]["email"].value;
+	   var c = document.forms["form"]["phone"].value;
+	   var e= document.forms["form"]["message"].value;
+	    
+		if (a == null || a == "" ||  a == "Name" || a==" "|| !isNaN(a)) {
+        alert("Please enter the Name..");
+		document.forms["form"]["name"].focus();
+        return false;
+    	}
+		if (b == null || b == "" ||  b == "Email Address" ) {
+        alert("Please enter the Email...");
+		document.forms["form"]["email"].focus();
+        return false;
+    	}
+		var atpos = b.indexOf("@");
+		var dotpos = b.lastIndexOf(".");
+		if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=b.length) {
+			alert("Not a valid e-mail address");
+			document.forms["form"]["email"].focus();
+			return false;
+		}
+		if (c == null || c == "" ||  c == "Phone No." || c==" ") {
+        alert("Please enter the phone No.");
+		document.forms["form"]["phone"].focus();
+        return false;
+    	}
+		if(isNaN(c))
+{
+alert("Enter the valid Mobile Number(Like : 9566137117)");
+document.forms["form"]["phone"].focus();
+return false;
+}
+if((c.length < 10) || (c.length > 11))
+{
+alert(" Your Mobile Number must be of 10 Integers");
+document.forms["form"]["phone"].focus();
+return false;
+}
+		
+		if (e == null || e == "" ||  e == "Message" ) {
+        alert("Please enter the Message.");
+		document.forms["form"]["message"].focus();
+        return false;
+    	}
+		
+		
+	return true;	
+	}
+</script>
+<form method="POST" name="contact_form" id="form" action="http://nuwebwave.com/w/html-contact-form.php" onSubmit="return validateForm();">
+  <table width="75%" style="border:1px solid #ccc;padding:5%;padding-left:2%;">
+    <tr>
+      <td ><label for='name'>Name: </label></td>
+      <td><input type="text" name="name"  id="name"  class="boxshadow" value='' onFocus="if(this.value==this.defaultValue) this.value='';" onBlur="if(this.value=='') this.value=this.defaultValue;"></td>
+    </tr>
+    <tr><td colspan="2">&nbsp;</td></tr>
+    <tr>
+      <td><label for='email'>Email: </label></td>
+      <td><input type="text" name="email" id="email"  class="boxshadow" value='' onFocus="if(this.value==this.defaultValue) this.value='';" onBlur="if(this.value=='') this.value=this.defaultValue;"></td>
+    </tr>
+    <tr><td colspan="2">&nbsp;</td></tr>
+    <tr>
+      <td><label for='email'>Phone: </label></td>
+      <td><input type="text" name="phone"   class="boxshadow" value='' onFocus="if(this.value==this.defaultValue) this.value='';" onBlur="if(this.value=='') this.value=this.defaultValue;"></td>
+    </tr>
+    <tr><td colspan="2">&nbsp;</td></tr>
+    <tr>
+      <td valign="top"><label for='message'>Message:</label></td>
+      <td><textarea name="message" id="message" class="boxshadow" rows=4 cols=23 onFocus="if(this.value==this.defaultValue) this.value='';" onBlur="if(this.value=='') this.value=this.defaultValue;"ss></textarea></td>
+    </tr>
+    <tr><td colspan="2">&nbsp;</td></tr>
+    <tr>
+      <td>Captcha: </td>
+      <td ><div class="g-recaptcha" data-sitekey="6LdVVA8UAAAAAJJQhwjwJKkC00ZPhBr6DuhJ9qhr"></div></td>
+    </tr>
+    <tr><td colspan="2">&nbsp;</td></tr>
+    
+    
+    
+    <tr><td colspan="2">&nbsp;</td></tr>
+    <tr>
+      <td colspan="2" align="center"><input type="submit" value="Submit" name='submit' id="submit" class="setmng"></td>
+    </tr>
+  </table>
+</form>
+ 
+
+</body>
+
+<!-- Mirrored from nuwebwave.com/w/html-contact-form.php-->
+</html>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ef2626</color>
+    <color name="colorPrimaryDark">#9e0003</color>
+    <color name="colorAccent">#de2e3a</color>
+    <color name="colorBackground">#26ef2626</color>
+    <color name="White">#ffffff</color>
+    <color name="fadedBlack">#50807e7e</color>
+    <color name="button_pressed">#9e0003</color>
+    <color name="button_focused">#9e0003</color>
+    <color name="button_activated">#9e0003</color>
+    <color name="colorNww">#d92246</color>
+    <color name="links">#666666</color>
+
+<color name="TextViewBackgrounds">#f50057</color>
+
+
+</resources>
